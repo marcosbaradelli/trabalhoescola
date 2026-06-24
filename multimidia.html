@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multimídia e Fontes · Geodinâmica Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  .multi{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-bottom:2.5rem}
+  .grafico{background:var(--branco);border:1px solid var(--bege);border-radius:var(--raio);padding:1.8rem;box-shadow:var(--sombra-sutil)}
+  .barra-wrap{margin-top:1rem}
+  .barra-item{margin-bottom:1rem}
+  .barra-item .rot{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:.35rem;color:var(--tinta)}
+  .barra{height:14px;border-radius:999px;background:var(--bege)}
+  .barra span{display:block;height:100%;border-radius:999px}
+  @media (max-width:880px){.multi{grid-template-columns:1fr 1fr}}
+  @media (max-width:560px){.multi{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span class="globo"></span> Geodinâmica Digital</a>
+    <nav>
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <ul id="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="permanencias.html">Permanências e Mudanças</a></li>
+        <li><a href="atualidades.html">Conexão Atualidades</a></li>
+        <li><a href="critico.html">Espaço Crítico</a></li>
+        <li><a href="multimidia.html" class="ativo">Multimídia e Fontes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="pagina-head">
+  <div class="pagina-head-inner reveal on">
+    <div class="crumbs"><a href="index.html">Início</a> › Multimídia e Fontes</div>
+    <span class="eyebrow"><span class="dot"></span> Mapas, vídeos e referências</span>
+    <h1>Multimídia e <em>Fontes</em></h1>
+    <p>Mapas temáticos, vídeos, gráficos comparativos e a lista de referências que sustentam cada análise deste site. Aqui mostramos as evidências por trás de tudo o que foi afirmado.</p>
+  </div>
+</section>
+
+<section class="bloco estreito reveal">
+  <div class="prosa">
+    <p>Um bom trabalho mostra de onde vêm suas informações. Esta página reúne os <strong>recursos visuais</strong> que ajudam a entender os dados e a <strong>lista de fontes</strong> que garante a credibilidade do projeto. Substitua os espaços indicados pelos mapas, vídeos e gráficos que o grupo produzir ou selecionar.</p>
+  </div>
+</section>
+
+<!-- RECURSOS -->
+<section class="bloco reveal">
+  <div class="sec-head">
+    <span class="sec-tag">Recursos visuais</span>
+    <h2>Mapas e vídeos</h2>
+    <p>Materiais que tornam a análise mais clara e concreta.</p>
+  </div>
+  <div class="multi">
+    <div class="recurso"><div class="big">🗺️</div><h4>Mapas temáticos</h4><p>Fronteiras coloniais, distribuição de recursos minerais e densidade populacional. Insira aqui imagens de mapas ou um mapa interativo incorporado.</p></div>
+    <div class="recurso"><div class="big">🎬</div><h4>Vídeos</h4><p>Documentários curtos sobre história, cultura e atualidades. Incorpore vídeos do YouTube usando o código de inserção.</p></div>
+    <div class="recurso"><div class="big">🖼️</div><h4>Galeria de imagens</h4><p>Fotografias que ilustram paisagens, povos e acontecimentos dos dois continentes, sempre com crédito do autor.</p></div>
+  </div>
+  <div class="prosa" style="max-width:64ch">
+    <p>Cada tipo de mídia tem uma função. Os <strong>mapas</strong> mostram o espaço — onde estão os recursos, como foram traçadas as fronteiras, onde vive a população. Os <strong>vídeos</strong> dão voz e movimento, aproximando quem visita das pessoas e dos lugares. Os <strong>gráficos</strong> traduzem números em imagem, tornando comparações imediatas. E as <strong>imagens</strong> documentam e emocionam. Bem combinados, esses recursos transformam um texto em uma experiência.</p>
+    <p>Dica de organização: para cada afirmação importante feita nas outras páginas, vale a pena ter um recurso visual que a sustente aqui. Assim o site fica coerente e mais convincente.</p>
+  </div>
+</section>
+
+<!-- GRÁFICO COMPARATIVO -->
+<section class="bloco reveal">
+  <div class="sec-head">
+    <span class="sec-tag">Gráficos comparativos</span>
+    <h2>Comparando os dois continentes</h2>
+    <p>Exemplo de gráfico ilustrativo. Substitua pelos dados reais que o grupo pesquisar e cite a fonte.</p>
+  </div>
+  <div class="grid grid-2">
+    <div class="grafico">
+      <h4 style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--tinta);margin-bottom:.3rem">População estimada (ilustrativo)</h4>
+      <p style="font-size:.85rem;color:var(--tinta-suave)">Valores em bilhões de habitantes · dado de exemplo</p>
+      <div class="barra-wrap">
+        <div class="barra-item"><div class="rot"><span>🌍 África</span><span>~1,4 bi</span></div><div class="barra"><span style="width:80%;background:linear-gradient(90deg,var(--verde),var(--verde-claro))"></span></div></div>
+        <div class="barra-item"><div class="rot"><span>🌎 Américas</span><span>~1,0 bi</span></div><div class="barra"><span style="width:57%;background:linear-gradient(90deg,var(--azul),var(--azul-claro))"></span></div></div>
+      </div>
+    </div>
+    <div class="grafico">
+      <h4 style="font-family:'Fraunces',serif;font-size:1.15rem;color:var(--tinta);margin-bottom:.3rem">Número de países (ilustrativo)</h4>
+      <p style="font-size:.85rem;color:var(--tinta-suave)">Quantidade de Estados soberanos · dado de exemplo</p>
+      <div class="barra-wrap">
+        <div class="barra-item"><div class="rot"><span>🌍 África</span><span>54 países</span></div><div class="barra"><span style="width:100%;background:linear-gradient(90deg,var(--verde),var(--teal))"></span></div></div>
+        <div class="barra-item"><div class="rot"><span>🌎 Américas</span><span>35 países</span></div><div class="barra"><span style="width:65%;background:linear-gradient(90deg,var(--teal),var(--azul))"></span></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="callout azul"><p>Importante: os números acima são apenas exemplos visuais. Antes de publicar, troque por dados verificados e indique a fonte (ano e instituição).</p></div>
+</section>
+
+<!-- FONTES -->
+<section class="bloco estreito reveal">
+  <div class="sec-head">
+    <span class="sec-tag">Referências</span>
+    <h2>Lista de fontes</h2>
+    <p>Tudo o que foi consultado para construir este site.</p>
+  </div>
+  <div class="fontes">
+    <h3>Como preencher</h3>
+    <ol>
+      <li><strong>Livros e materiais didáticos:</strong> autor, título, editora e ano. Ex.: SOBRENOME, Nome. <em>Título do livro</em>. Editora, ano.</li>
+      <li><strong>Sites e artigos:</strong> autor (se houver), título da página, nome do site, data de acesso e link completo.</li>
+      <li><strong>Notícias usadas em "Conexão Atualidades":</strong> veículo, título da matéria, data e endereço.</li>
+      <li><strong>Mapas, vídeos e imagens:</strong> origem de cada recurso e nome do autor/instituição.</li>
+      <li><strong>Vídeos do YouTube:</strong> título, canal e link.</li>
+    </ol>
+  </div>
+</section>
+
+<div class="passo">
+  <a href="critico.html"><span class="dir">← Página anterior</span><strong>Espaço Crítico</strong></a>
+  <a class="next" href="index.html"><span class="dir">Voltar ao →</span><strong>Início</strong></a>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div><h4>Geodinâmica Digital</h4><p>África & Américas — projeto interativo sobre permanências, mudanças e as grandes atualidades dos dois continentes.</p></div>
+    <div class="foot-links">
+      <a href="index.html">Início</a>
+      <a href="permanencias.html">Permanências e Mudanças</a>
+      <a href="atualidades.html">Conexão Atualidades</a>
+      <a href="critico.html">Espaço Crítico</a>
+      <a href="multimidia.html">Multimídia e Fontes</a>
+    </div>
+  </div>
+  <div class="foot-bottom">3º MB · Projeto Geodinâmica Digital · 2º Trimestre · Construído com corresponsabilidade pelo grupo.</div>
+</footer>
+
+<script>
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

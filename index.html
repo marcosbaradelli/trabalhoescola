@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Início · Geodinâmica Digital — África & Américas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+  .hero{position:relative;overflow:hidden;padding:5rem 1.5rem 4.5rem;
+    background:radial-gradient(ellipse 65% 80% at 82% 8%,var(--azul-suave),transparent 62%),
+               radial-gradient(ellipse 70% 75% at 8% 92%,var(--verde-suave),transparent 60%),
+               var(--bege-claro);}
+  .hero-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.5vw,3.9rem);color:var(--tinta);margin-bottom:1.2rem}
+  .hero h1 em{font-style:normal;background:linear-gradient(120deg,var(--verde),var(--teal) 55%,var(--azul));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{font-size:1.12rem;color:var(--tinta-suave);max-width:48ch;margin-bottom:2rem}
+  .hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
+  .continentes{background:var(--branco);border-radius:24px;padding:1.8rem;box-shadow:var(--sombra);border:1px solid var(--bege)}
+  .continentes h3{font-size:1rem;color:var(--tinta-suave);font-weight:600;font-family:'Inter';text-transform:uppercase;letter-spacing:.08em;margin-bottom:1.2rem}
+  .par{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .placa{border-radius:16px;padding:1.2rem;color:var(--branco);position:relative;overflow:hidden;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
+  .placa.africa{background:linear-gradient(160deg,var(--verde),var(--verde-claro))}
+  .placa.america{background:linear-gradient(160deg,var(--azul),var(--azul-claro))}
+  .placa .nome{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:600}
+  .placa .stat{font-size:.82rem;opacity:.95;line-height:1.4}
+  .placa .glyph{position:absolute;right:-10px;bottom:-20px;font-size:5rem;opacity:.15}
+  .mapa-menu{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin-top:.5rem}
+  @media (max-width:880px){.hero-inner{grid-template-columns:1fr;gap:2.5rem}.mapa-menu{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span class="globo"></span> Geodinâmica Digital</a>
+    <nav>
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <ul id="menu">
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="permanencias.html">Permanências e Mudanças</a></li>
+        <li><a href="atualidades.html">Conexão Atualidades</a></li>
+        <li><a href="critico.html">Espaço Crítico</a></li>
+        <li><a href="multimidia.html">Multimídia e Fontes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="reveal on">
+      <span class="eyebrow"><span class="dot"></span> Projeto · 3º MB · 2º Trimestre</span>
+      <h1>Dois continentes, <em>uma mesma terra</em> em transformação.</h1>
+      <p class="lead">Um site interativo que analisa as transformações da África e das Américas, conectando os processos históricos que moldaram esses territórios às grandes questões do mundo de hoje.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="permanencias.html">Começar a explorar →</a>
+        <a class="btn btn-ghost" href="critico.html">Ir ao Espaço Crítico</a>
+      </div>
+    </div>
+    <div class="reveal on">
+      <div class="continentes">
+        <h3>Os territórios em foco</h3>
+        <div class="par">
+          <div class="placa africa"><div><div class="nome">África</div><div class="stat">Berço da humanidade e palco de profundas reconfigurações territoriais.</div></div><div class="glyph">🌍</div></div>
+          <div class="placa america"><div><div class="nome">Américas</div><div class="stat">Encontro de povos originários, colonização e identidades em movimento.</div></div><div class="glyph">🌎</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloco reveal">
+  <div class="sec-head">
+    <span class="sec-tag">Sobre o projeto</span>
+    <h2>Geodinâmica Digital: o que é e o que propõe</h2>
+    <p>O objetivo central é criar um site interativo que analise as transformações nos continentes africano e americano, conectando os processos históricos às grandes atualidades.</p>
+  </div>
+  <div class="prosa" style="max-width:64ch;margin-bottom:1.5rem">
+    <p>A palavra <strong>geodinâmica</strong> nasce da geologia, onde descreve as forças que movem e transformam a crosta terrestre ao longo do tempo. Pegamos esse conceito emprestado para pensar os continentes não como mapas parados, mas como territórios <strong>em constante movimento</strong> — moldados por placas históricas, sociais e econômicas que se chocam, se acomodam e produzem o relevo humano que vemos hoje.</p>
+    <p>O recorte "Digital" indica o formato: em vez de um cartaz ou trabalho impresso, construímos um espaço navegável na internet, em que texto, imagem, mapa e gráfico convivem. Isso nos obriga a pensar não só <em>o que</em> dizer, mas <em>como</em> organizar a informação para quem visita.</p>
+  </div>
+  <div class="grid grid-3">
+    <div class="card"><div class="ic verde">🎯</div><h3>Objetivo</h3><p>Analisar as transformações de África e Américas e mostrar, de forma clara e visual, como o passado explica o presente dos dois continentes.</p></div>
+    <div class="card"><div class="ic azul">🧩</div><h3>Método</h3><p>Dividir o tema em cinco páginas que se complementam: cada uma aprofunda um ângulo, e juntas formam uma análise completa.</p></div>
+    <div class="card"><div class="ic verde">🌐</div><h3>Recorte</h3><p>Dois continentes profundamente ligados pela história da colonização e da diáspora, lidos lado a lado para revelar semelhanças e diferenças.</p></div>
+  </div>
+</section>
+
+<section class="bloco reveal" style="padding-top:0">
+  <div class="sec-head">
+    <span class="sec-tag">O papel do grupo</span>
+    <h2>O saber se constrói junto</h2>
+    <p>Este projeto exige <strong>corresponsabilidade</strong>: o sucesso do site depende do compromisso individual de cada integrante com a parte técnica e do compromisso coletivo com a integração dos conteúdos.</p>
+  </div>
+  <div class="prosa" style="max-width:64ch;margin-bottom:2rem">
+    <p>Cada página deste site é uma peça de um quebra-cabeça maior. Sozinhas, contam apenas um pedaço da história; juntas, revelam como África e Américas tiveram trajetórias profundamente entrelaçadas. Construir o saber coletivo significa que ninguém termina sozinho — pesquisamos, testamos, revisamos o trabalho um do outro e garantimos que tudo converse.</p>
+    <p>Por isso dividimos o conteúdo em páginas próprias, com navegação clara, para que cada tema receba a atenção e o detalhamento que merece.</p>
+  </div>
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--tinta)">Integrantes do grupo</h3>
+  <div class="equipe">
+    <div class="membro"><img class="avatar-foto" src="fotos/leticia.jpg" alt="Foto de Letícia de Marco"><strong>Letícia de Marco</strong><span>Integrante</span></div>
+    <div class="membro"><img class="avatar-foto" src="fotos/evelyn.jpg" alt="Foto de Evelyn Preslhakoski"><strong>Evelyn Preslhakoski</strong><span>Integrante</span></div>
+    <div class="membro"><img class="avatar-foto" src="fotos/isabela.jpg" alt="Foto de Isabela Rosante"><strong>Isabela Rosante</strong><span>Integrante</span></div>
+    <div class="membro"><img class="avatar-foto" src="fotos/julia.jpg" alt="Foto de Julia Valeriano"><strong>Julia Valeriano</strong><span>Integrante</span></div>
+    <div class="membro"><img class="avatar-foto" src="fotos/luisa.jpg" alt="Foto de Luísa Borges"><strong>Luísa Borges</strong><span>Integrante</span></div>
+  </div>
+</section>
+
+<section class="bloco reveal" style="padding-top:0">
+  <div class="sec-head">
+    <span class="sec-tag">Navegue pelo site</span>
+    <h2>Quatro caminhos para entender os dois continentes</h2>
+    <p>Cada menu é uma página completa. Comece por onde preferir — ou siga a ordem sugerida.</p>
+  </div>
+  <div class="mapa-menu">
+    <a href="permanencias.html" class="card"><div class="ic verde">🧭</div><h3>Permanências e Mudanças</h3><p>Como a história desses continentes moldou o que eles são hoje — análise geográfica e histórica.</p></a>
+    <a href="atualidades.html" class="card"><div class="ic azul">📰</div><h3>Conexão Atualidades</h3><p>Artigos de opinião, notícias recentes e análise de questões globais ligadas ao tema.</p></a>
+    <a href="critico.html" class="card"><div class="ic verde">💬</div><h3>Espaço Crítico</h3><p>Discussão sobre o desenvolvimento individual e coletivo das populações envolvidas.</p></a>
+    <a href="multimidia.html" class="card"><div class="ic azul">🗺️</div><h3>Multimídia e Fontes</h3><p>Mapas temáticos, vídeos, gráficos comparativos e lista de referências.</p></a>
+  </div>
+</section>
+
+<div class="passo">
+  <span></span>
+  <a class="next" href="permanencias.html"><span class="dir">Próxima página →</span><strong>Permanências e Mudanças</strong></a>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div><h4>Geodinâmica Digital</h4><p>África & Américas — projeto interativo sobre permanências, mudanças e as grandes atualidades dos dois continentes.</p></div>
+    <div class="foot-links">
+      <a href="index.html">Início</a>
+      <a href="permanencias.html">Permanências e Mudanças</a>
+      <a href="atualidades.html">Conexão Atualidades</a>
+      <a href="critico.html">Espaço Crítico</a>
+      <a href="multimidia.html">Multimídia e Fontes</a>
+    </div>
+  </div>
+  <div class="foot-bottom">3º MB · Projeto Geodinâmica Digital · 2º Trimestre · Construído com corresponsabilidade pelo grupo.</div>
+</footer>
+
+<script>
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
