@@ -167,6 +167,27 @@ section.bloco{max-width:1120px;margin:0 auto;padding:3.5rem 1.5rem}
 .fontes ol{padding-left:1.2rem;color:var(--tinta-suave)}
 .fontes li{margin-bottom:.7rem;font-size:.92rem}
 
+/* Vídeos incorporados */
+.video-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.video-card{background:var(--branco);border:1px solid var(--bege);border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra-sutil)}
+.video-embed{position:relative;width:100%;padding-top:56.25%;background:var(--tinta)}
+.video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-card .vc-corpo{padding:1.3rem 1.5rem}
+.video-card .vc-tag{font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--azul);display:block;margin-bottom:.4rem}
+.video-card h4{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--tinta);margin-bottom:.4rem}
+.video-card p{font-size:.9rem;color:var(--tinta-suave)}
+.video-thumb{position:relative;width:100%;padding-top:56.25%;background:linear-gradient(135deg,var(--verde),var(--teal),var(--azul));display:block}
+.video-thumb .play{position:absolute;inset:0;display:grid;place-items:center}
+.video-thumb .play span{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;font-size:1.5rem;color:var(--verde);box-shadow:var(--sombra)}
+.video-thumb .lbl{position:absolute;left:1rem;bottom:.9rem;color:var(--branco);font-family:'Fraunces',serif;font-weight:600;font-size:1.1rem;text-shadow:0 1px 4px rgba(0,0,0,.3)}
+
+/* Legenda de figura (mapas/gráficos SVG) */
+.figura{background:var(--branco);border:1px solid var(--bege);border-radius:var(--raio);padding:1.6rem;box-shadow:var(--sombra-sutil);margin:1.4rem 0}
+.figura svg{width:100%;height:auto;display:block}
+.figura figcaption{font-size:.84rem;color:var(--tinta-suave);margin-top:.9rem;font-style:italic;text-align:center}
+.figura h4{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--tinta);margin-bottom:1rem}
+@media (max-width:880px){.video-grid{grid-template-columns:1fr}}
+
 /* Equipe */
 .equipe{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:1.5rem}
 .membro{background:var(--branco);border:1px solid var(--bege);border-radius:16px;padding:1.3rem;text-align:center;box-shadow:var(--sombra-sutil)}
